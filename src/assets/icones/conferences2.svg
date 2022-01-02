@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="233" height="298.077" viewBox="0 0 233 298.077">
+  <g id="Groupe_240" data-name="Groupe 240" transform="translate(-78.5 -1798.487)">
+    <g id="Groupe_33" data-name="Groupe 33" transform="translate(-271.328 1574.874)">
+      <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M548.036,311.138,404.519,226.291C392.858,219.4,375,226.087,375,243.13V412.783a19.553,19.553,0,0,0,29.519,16.839l143.517-84.805a19.55,19.55,0,0,0,0-33.678Z" transform="translate(0 0)" fill="#4f7e9f"/>
+      <path id="Icon_awesome-microphone-alt" data-name="Icon awesome-microphone-alt" d="M479.184,333.98h-2.67a2.67,2.67,0,0,0-2.67,2.67v8.011a21.388,21.388,0,0,1-21.411,21.364q-1.047,0-2.089-.105a22.012,22.012,0,0,1-19.227-22.211v-7.059a2.67,2.67,0,0,0-2.67-2.67h-2.67a2.67,2.67,0,0,0-2.67,2.67v6.7a30.293,30.293,0,0,0,25.37,30.324v5.7h-9.348a2.67,2.67,0,0,0-2.67,2.67v2.673a2.67,2.67,0,0,0,2.67,2.67h26.7a2.67,2.67,0,0,0,2.67-2.67v-2.67a2.67,2.67,0,0,0-2.67-2.67h-9.346v-5.636a29.4,29.4,0,0,0,25.368-29.08v-8.011A2.67,2.67,0,0,0,479.184,333.98Zm-26.7,26.7A16.022,16.022,0,0,0,468.5,344.662H454.26c-.983,0-1.781-.6-1.781-1.334v-2.67c0-.739.8-1.334,1.781-1.334H468.5V333.98H454.26c-.983,0-1.781-.6-1.781-1.334v-2.67c0-.739.8-1.334,1.781-1.334H468.5V323.3H454.26c-.983,0-1.781-.6-1.781-1.334v-2.67c0-.738.8-1.334,1.781-1.334H468.5a16.023,16.023,0,0,0-32.046,0v26.7A16.022,16.022,0,0,0,452.48,360.684Z" transform="translate(-10.065 -16.388)" fill="#fff"/>
+    </g>
+    <g id="Notre_actualité" data-name="Notre actualité" transform="translate(-60.133 1509.343)" style="isolation: isolate">
+      <text id="Nos_conférences" data-name="Nos conférences" transform="translate(138.633 545.757)" fill="#284b63" font-size="29" font-family="Raleway-Bold, Raleway" font-weight="700" style="isolation: isolate"><tspan x="0" y="0">Nos conférences</tspan></text>
+    </g>
+    <rect id="Rectangle_52" data-name="Rectangle 52" width="113.229" height="28.706" transform="translate(193.487 2067.858)" fill="#d04141"/>
+    <text id="EN_DIRECT_" data-name="EN DIRECT " transform="translate(189.5 2075.832)" fill="#fff" font-size="15" font-family="JosefinSans-Regular, Josefin Sans"><tspan x="20.088" y="11">EN DIRECT </tspan></text>
+  </g>
+</svg>

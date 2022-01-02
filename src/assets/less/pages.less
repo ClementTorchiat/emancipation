@@ -1,0 +1,440 @@
+body {
+  header {
+    .fond-header {
+      width: 101vw;
+      height: 100%;
+      transform: translateY(-2.5vw);
+      @media screen and (min-width: 800px){
+        width: 101vw;
+        height: 100%;
+        position: relative;
+        transform: translate(-1vw, -44vw);
+        z-index: -10;
+        margin-bottom: -28vw;
+      }
+    }
+    .icones-header {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      @media screen and (min-width: 800px) {
+        width: 6vw;
+        height: auto;
+        top: 6vw;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .titre-header {
+      text-align: center;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      color: white;
+      width: 100%;
+      @media screen and (min-width: 800px) {
+        font-size: 2vw;
+        top: 11vw;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 1.3vw;
+        position: absolute;
+      }
+    }
+  }
+  main {
+    #actualités-1 {
+      background-color: #F5EDE7;
+      text-align: center;
+      padding-bottom: 30px;
+      .flex {
+        .gauche {
+          a {
+            img {
+              margin-top: 20px;
+              @media screen and (min-width: 800px) {
+                width: 14vw;
+                margin-top: 4vw;
+                margin-left: 6.5vw;
+              }
+            }
+          }
+        }
+        .droite {
+          h2 {
+            font-family: Oxygen, sans-serif;
+            font-weight: bold;
+            font-size: 1.875rem;
+            text-align: center;
+            color: #284B63;
+            @media screen and (min-width: 800px) {
+              margin-top: 3.2vw;
+              font-size: 1.95vw;
+            }
+          }
+          p {
+            font-family: Helvetica, sans-serif;
+            color: #465158;
+            font-size: 1.25rem;
+            line-height: 35px;
+            margin: 40px 40px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.2vw;
+              line-height: 2.2vw;
+              margin-bottom: 6vw;
+              padding: 0 6.5vw 0;
+              margin-top: 4vw;
+            }
+          }
+        }
+      }
+    }
+    #actualités-2 {
+      background-color: #27272A;
+      text-align: center;
+      margin-top: -20px;
+      margin-bottom: -20px;
+      h2 {
+        font-family: Oxygen, sans-serif;
+        font-weight: bold;
+        font-size: 1.875rem;
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+        @media screen and (min-width: 800px) {
+          font-size: 2.6vw;
+          padding-top: 1.95vw;
+        }
+      }
+      .logo-twitter {
+        margin: -20px 0;
+        @media screen and (min-width: 800px) {
+          width: 7.8vw;
+          height: auto;
+          margin: 0;
+        }
+      }
+      .tweets {
+        text-align: center;
+        margin: 0 auto;
+        width: 80vw;
+        background-color: white;
+        border-radius: 20px;
+        div {
+          h3 {
+            font-family: Oxygen, sans-serif;
+            font-size: 25px;
+            text-decoration: underline;
+            @media screen and (min-width: 800px) {
+              font-size: 1.6vw;
+              text-align: left;
+              padding-left: 1.3vw;
+            }
+          }
+          &:first-child {
+            border-bottom: solid black 1px;
+            @media screen and (min-width: 800px) {
+              border-bottom: none;
+            }
+            h3 {
+              padding-top: 10px;
+              @media screen and (min-width: 800px) {
+                padding-top: 0.65vw;
+              }
+            }
+          }
+          &:last-child {
+            p {
+              &:last-child {
+                padding-bottom: 10px;
+                @media screen and (min-width: 800px) {
+                  padding-bottom: 0.65vw;
+                }
+              }
+            }
+          }
+          p {
+            &:nth-child(2) {
+              color: #A7A7A7;
+              font-family: Roboto, sans-serif;
+              margin-top: -25px;
+              font-size: 15px;
+              @media screen and (min-width: 800px) {
+                text-align: left;
+                padding-left: 1.3vw;
+                font-size: 1vw;
+                margin-top: -1.63vw;
+              }
+            }
+            &:last-child {
+              font-size: 20px;
+              text-align: left;
+              font-family: Oxygen, sans-serif;
+              line-height: 40px;
+              padding: 0 20px;
+              @media screen and (min-width: 800px) {
+                font-size: 1.3vw;
+                line-height: 2.6vw;
+                padding: 0 1.3vw;
+              }
+            }
+          }
+        }
+      }
+      .logo-insta {
+        margin: 20px 0;
+        @media screen and (min-width: 800px) {
+          width: 7vw;
+          height: auto;
+          margin-top: 6vw;
+          margin-bottom: 3vw;
+        }
+      }
+      .flex {
+        div {
+          img {
+            border: solid white 3px;
+            padding: 5px 5px -5px -5px;
+            width: 310px;
+            @media screen and (min-width: 800px) {
+              width: 22vw;
+            }
+          }
+          h3 {
+            font-family: Oxygen Bold, sans-serif;
+            font-size: 25px;
+            color: white;
+            text-align: left;
+            padding-left: 6vw;
+            font-weight: bold;
+            margin-top: 5px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.63vw;
+              margin-top: 0.32vw;
+            }
+          }
+          p {
+            font-family: Oxygen, sans-serif;
+            font-size: 20px;
+            color: white;
+            text-align: left;
+            padding-left: 6vw;
+            line-height: 40px;
+            padding-bottom: 20px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.3vw;
+              line-height: 2.6vw;
+              padding-bottom: 6vw;
+            }
+          }
+        }
+      }
+    }
+    #informations-1 {
+      text-align: center;
+      padding-bottom: 50px;
+      h2 {
+        font-family: Raleway Bold, sans-serif;
+        font-size: 40px;
+        color: #284B63;
+        border: #284B63 thick double;
+        width: 300px;
+        margin: 30px auto 0;
+        @media screen and (min-width: 800px) {
+          font-size: 5vw;
+          width: 32.5vw;
+          text-align: left;
+          margin: 1.9vw 0 0 9.8vw;
+          padding: 2.6vw;
+          border: #284B63 10px double;
+        }
+      }
+      div {
+        p {
+          margin-bottom: 20px;
+          @media screen and (min-width: 800px) {
+            margin: 2vw 0 1.3vw 8vw;
+          }
+        }
+      }
+      p {
+        font-size: 20px;
+        color: #465158;
+        font-family: Roboto, sans-serif;
+        padding: 0 30px;
+        text-align: left;
+        line-height: 30px;
+        margin-bottom: 50px;
+        @media screen and (min-width: 800px) {
+          font-size: 1.3vw;
+          padding: 0 1.95vw;
+          line-height: 1.95vw;
+          margin: 0 8vw 3.3vw 8vw;
+        }
+      }
+      img {
+        padding: 20px 0;
+        @media screen and (min-width: 800px) {
+          width: 120vw;
+          margin: 0 8vw 0 6vw;
+          transform: translateY(-3.3vw);
+        }
+      }
+    }
+    #informations-2 {
+      text-align: center;
+      background-color: #F5EDE7;
+      #informations-2-titre {
+        img {
+          margin-top: 30px;
+          @media screen and (min-width: 800px) {
+            width: 16vw;
+          }
+        }
+        h2 {
+          font-family: Oxygen Bold, sans-serif;
+          font-size: 36px;
+          color: #534134;
+          @media screen and (min-width: 800px) {
+            font-size: 3vw;
+          }
+        }
+        p {
+          font-family: Roboto, sans-serif;
+          font-size: 20px;
+          color: #465158;
+          text-align: left;
+          margin: 0 30px 40px;
+          line-height: 30px;
+          @media screen and (min-width: 800px) {
+            font-size: 1.3vw;
+            text-align: center;
+            color: #202C34;
+            margin: 0 8vw 2.6vw;
+            line-height: 1.95vw;
+          }
+        }
+      }
+      #equipe {
+        text-align: center;
+        div {
+          margin: 0 auto;
+          img {
+            width: 290px;
+            height: auto;
+            border: #284B63 thick double;
+            padding: 2px;
+            @media screen and (min-width: 800px) {
+              width: 18.9vw;
+              padding: 0.13vw;
+            }
+          }
+          h3 {
+            font-family: Raleway, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            color: #534134;
+            margin-top: 10px;
+            margin-bottom: 0;
+            @media screen and (min-width: 800px) {
+              font-size: 1.6vw;
+              margin-top: 0.65vw;
+            }
+          }
+          p {
+            font-family: Raleway, sans-serif;
+            font-size: 15px;
+            color: #534134;
+            margin-top: 5px;
+            @media screen and (min-width: 800px) {
+              font-size: 0.97vw;
+              margin-top: 0.32vw;
+            }
+          }
+          .flex-2 {
+            a {
+              margin: 0 auto 30px;
+              @media screen and (min-width: 800px) {
+                margin: 0 auto 1.95vw;
+              }
+              &:first-child {
+                margin-right: 40px;
+                @media screen and (min-width: 800px) {
+                  margin-right: 2.6vw;
+                }
+              }
+              &:last-child {
+                margin-left: 40px;
+                @media screen and (min-width: 800px) {
+                  margin-left: 2.6vw;
+                }
+              }
+              img {
+                width: 45px;
+                padding: 0;
+                border: none;
+                @media screen and (min-width: 800px) {
+                  width: 2.9vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #projets-1 {
+      text-align: center;
+      padding-bottom: 50px;
+      p {
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        color: #465158;
+        text-align: left;
+        line-height: 30px;
+        margin: 30px 30px 0;
+        @media screen and (min-width: 800px) {
+          font-size: 1.3vw;
+          line-height: 2vw;
+          margin: 2vw 8vw 0;
+        }
+      }
+      .flex {
+        div {
+          img {
+            width: 290px;
+            height: auto;
+            margin-top: 80px;
+            border: #284B63 thick double;
+            @media screen and (min-width: 800px) {
+              width: 24vw;
+              margin-top: 5vw;
+            }
+          }
+          h3 {
+            font-family: Raleway, sans-serif;
+            font-weight: bold;
+            color: #534134;
+            font-size: 25px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.6vw;
+            }
+          }
+          p {
+            font-family: Raleway, sans-serif;
+            color: #534134;
+            font-size: 20px;
+            margin: 30px 30px 40px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.3vw;
+              margin: 2vw 4vw 3vw;
+            }
+          }
+          &:last-child {
+            margin-bottom: 80px;
+          }
+        }
+      }
+    }
+  }
+}
