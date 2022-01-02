@@ -6,45 +6,45 @@
         <div class="nav-toggle-bar"></div>
       </div>
       <nav class="menu">
-        <img class="icones-menu" src="@/assets/icones/maison.svg" alt="accueil">
-        <img class="ubfc" src="@/assets/img/logo-ubfc.png" alt="ubfc">
+        <router-link to="/"><img class="icones-menu" src="@/assets/icones/maison.svg" alt="accueil"></router-link>
+        <router-link to="/"><img class="ubfc" src="@/assets/img/logo-ubfc.png" alt="ubfc"></router-link>
         <ul>
-          <li><a href="actualites.html">Actualités</a></li>
-          <li><a href="informations.html">Qui sommes-nous ?</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="conferences.html">Conférences</a></li>
-          <li><a href="">Émancipation</a></li>
+          <li><router-link to="Actualites" tag="a">Actualités</router-link></li>
+          <li><router-link to="Information" tag="a">Qui sommes-nous ?</router-link></li>
+          <li><router-link to="Projets" tag="a">Projets</router-link></li>
+          <li><router-link to="Conferences" tag="a">Conférences</router-link></li>
+          <li><router-link to="Emancipation" tag="a">Émancipation</router-link></li>
         </ul>
-        <img class="icones-menu" src="@/assets/icones/user.svg" alt="profil">
+        <router-link to="/"><img class="icones-menu" src="@/assets/icones/user.svg" alt="profil"></router-link>
       </nav>
       <img src="@/assets/img/fondheader2.png" alt="fond" class="fond-header">
-      <img src="@/assets/icones/actualites.svg" alt="actualités" class="icones-header">
-      <h1 class="titre-header">NOTRE ACTUALITÉ</h1>
     </header>
     <router-view/>
     <footer>
       <div class="boite">
         <ul>
-          <li><a href=""><h2>LOREM</h2></a></li>
-          <li><a href="">Ipsum</a></li>
-          <li><a href="">Ipsum</a></li>
-          <li><a href="">Ipsum</a></li>
+          <li><router-link to="/" tag="a"><h2>NAVIGATION</h2></router-link></li>
+          <li><router-link to="Actualites" tag="a">Actualités</router-link></li>
+          <li><router-link to="Information" tag="a">Qui sommes-nous ?</router-link></li>
+          <li><router-link to="Projets" tag="a">Projets</router-link></li>
+          <li><router-link to="Conferences" tag="a">Conférences</router-link></li>
+          <li><router-link to="Emancipation" tag="a">Émancipation</router-link></li>
         </ul>
       </div>
       <div class="boite">
         <ul>
-          <li><a href=""><h2>LOREM</h2></a></li>
-          <li><a href="">Ipsum</a></li>
-          <li><a href="">Ipsum</a></li>
-          <li><a href="">Ipsum</a></li>
+          <li><router-link to="/" tag="a"><h2>AUTRES PAGES</h2></router-link></li>
+          <li><router-link to="/" tag="a">Mentions légales</router-link></li>
+          <li><router-link to="Contact" tag="a">Contact</router-link></li>
+          <li><router-link to="/" tag="a">Mon espace</router-link></li>
         </ul>
       </div>
       <div class="boite">
         <ul>
-          <li><a href=""><h2>LOREM</h2></a></li>
-          <li><a href="">Ipsum</a></li>
-          <li><a href="">Ipsum</a></li>
-          <li><a href="">Ipsum</a></li>
+          <li><a href=""><h2>UNIVERSITÉ</h2></a></li>
+          <li><a href="">UBFC</a></li>
+          <li><a href="">Université de Bourgogne</a></li>
+          <li><a href="">Université de Franche-Comté</a></li>
         </ul>
       </div>
     </footer>

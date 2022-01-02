@@ -1,5 +1,6 @@
 <template>
   <main>
+    <heading></heading>
     <div id="informations-1">
       <h2>POTHEM LLC</h2>
       <div class="flex">
@@ -47,6 +48,22 @@
     </div>
   </main>
 </template>
+
+<script>
+/* eslint-disable */
+import heading from '@/components/heading.vue';
+
+export default {
+  name: 'information',
+  components: { heading },
+  computed: {
+    getMetaData() {
+      return this.$route.meta.data;
+    }
+  }
+}
+
+</script>
 
 <style scoped lang="less">
   @import "/src/assets/less/styles.less";

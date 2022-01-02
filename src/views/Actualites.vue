@@ -1,5 +1,6 @@
 <template>
   <main>
+    <heading></heading>
     <div id="actualités-1">
       <div class="flex">
         <div class="gauche">
@@ -49,9 +50,19 @@
   </main>
 </template>
 <script>
-export default {
+/* eslint-disable */
+import heading from '@/components/heading.vue';
 
-};
+export default {
+  name: 'Actualites',
+  components: { heading },
+  computed: {
+    getMetaData() {
+      return this.$route.meta.data;
+    }
+  }
+}
+
 </script>
 
 <style scoped lang="less">

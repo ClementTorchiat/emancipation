@@ -1,30 +1,6 @@
 <template>
   <main>
-    <div class="header">
-      <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
-        <div class="nav-toggle-circle"></div>
-        <div class="nav-toggle-bar"></div>
-      </div>
-      <nav class="menu">
-        <img class="icones-menu" src="@/assets/icones/maison.svg" alt="accueil">
-        <img class="ubfc" src="@/assets/img/logo-ubfc.png" alt="ubfc">
-        <ul>
-          <li><a href="actualites.html">Actualités</a></li>
-          <li><a href="informations.html">Qui sommes-nous ?</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="conferences.html">Conférences</a></li>
-          <li><a href="">Émancipation</a></li>
-        </ul>
-        <img class="icones-menu" src="@/assets/icones/user.svg" alt="profil">
-      </nav>
-      <img src="@/assets/img/fondheader2.png" alt="fond" class="fond-accueil">
-      <div class="header-accueil-container">
-        <img src="@/assets/img/logo-ubfc2.png" alt="logo" id="icone-ubfc-accueil">
-        <h1 id="titre-accueil">POTHEM</h1>
-        <p>Pôle Thématique langues lettres et communications</p>
-        <img src="@/assets/icones/fleche-bas.svg" alt="flèche" id="flèche-bas">
-      </div>
-    </div>
+    <heading></heading>
     <div id="accueil-1">
       <div class="flex">
         <div class="gauche">
@@ -126,6 +102,15 @@
     </div>
   </main>
 </template>
+
+<script>
+/* eslint-disable */
+import heading from '@/components/heading.vue';
+export default {
+  name: 'Accueil',
+  components: { heading },
+}
+</script>
 
 <style scoped lang="less">
 @import "/src/assets/less/styles.less";
