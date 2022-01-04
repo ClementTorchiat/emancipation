@@ -47,12 +47,13 @@ body {
     #actualités-1 {
       background-color: #F5EDE7;
       text-align: center;
-      padding-bottom: 30px;
+      padding-bottom: 50px;
       .flex {
         .gauche {
           a {
             img {
               margin-top: 20px;
+              width: 40vw;
               @media screen and (min-width: 800px) {
                 width: 14vw;
                 margin-top: 4vw;
@@ -95,109 +96,20 @@ body {
       text-align: center;
       margin-top: -20px;
       margin-bottom: -20px;
-      h2 {
-        font-family: Oxygen, sans-serif;
-        font-weight: bold;
-        font-size: 1.875rem;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        @media screen and (min-width: 800px) {
-          font-size: 2.6vw;
-          padding-top: 1.95vw;
-        }
-      }
-      .logo-twitter {
-        margin: -20px 0;
-        @media screen and (min-width: 800px) {
-          width: 7.8vw;
-          height: auto;
-          margin: 0;
-        }
-      }
-      .tweets {
-        text-align: center;
-        margin: 0 auto;
-        width: 80vw;
-        background-color: white;
-        border-radius: 20px;
-        div {
-          h3 {
-            font-family: Oxygen, sans-serif;
-            font-size: 25px;
-            text-decoration: underline;
-            @media screen and (min-width: 800px) {
-              font-size: 1.6vw;
-              text-align: left;
-              padding-left: 1.3vw;
-            }
-          }
-          &:first-child {
-            border-bottom: solid black 1px;
-            @media screen and (min-width: 800px) {
-              border-bottom: none;
-            }
-            h3 {
-              padding-top: 10px;
-              @media screen and (min-width: 800px) {
-                padding-top: 0.65vw;
-              }
-            }
-          }
-          &:last-child {
-            p {
-              &:last-child {
-                padding-bottom: 10px;
-                @media screen and (min-width: 800px) {
-                  padding-bottom: 0.65vw;
-                }
-              }
-            }
-          }
-          p {
-            &:nth-child(2) {
-              color: #A7A7A7;
-              font-family: Roboto, sans-serif;
-              margin-top: -25px;
-              font-size: 15px;
-              @media screen and (min-width: 800px) {
-                text-align: left;
-                padding-left: 1.3vw;
-                font-size: 1vw;
-                margin-top: -1.63vw;
-              }
-            }
-            &:last-child {
-              font-size: 20px;
-              text-align: left;
-              font-family: Oxygen, sans-serif;
-              line-height: 40px;
-              padding: 0 20px;
-              @media screen and (min-width: 800px) {
-                font-size: 1.3vw;
-                line-height: 2.6vw;
-                padding: 0 1.3vw;
-              }
-            }
-          }
-        }
-      }
-      .logo-insta {
-        margin: 20px 0;
-        @media screen and (min-width: 800px) {
-          width: 7vw;
-          height: auto;
-          margin-top: 6vw;
-          margin-bottom: 3vw;
-        }
-      }
+      padding-bottom: 80px;
       .flex {
         div {
+          @media screen and (min-width: 800px) {
+            width: 30vw;
+          }
           img {
-            border: solid white 3px;
             padding: 5px 5px -5px -5px;
             width: 310px;
+            margin-top: 30px;
+            margin-bottom: 30px;
             @media screen and (min-width: 800px) {
+              margin-top: 2.6vw;
+              margin-bottom: 2.6vw;
               width: 22vw;
             }
           }
@@ -206,7 +118,8 @@ body {
             font-size: 25px;
             color: white;
             text-align: left;
-            padding-left: 6vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
             font-weight: bold;
             margin-top: 5px;
             @media screen and (min-width: 800px) {
@@ -219,13 +132,14 @@ body {
             font-size: 20px;
             color: white;
             text-align: left;
-            padding-left: 6vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
             line-height: 40px;
             padding-bottom: 20px;
             @media screen and (min-width: 800px) {
               font-size: 1.3vw;
               line-height: 2.6vw;
-              padding-bottom: 6vw;
+              padding-bottom: 4vw;
             }
           }
         }
@@ -399,8 +313,23 @@ body {
           margin: 2vw 8vw 0;
         }
       }
-      .flex {
+      .flex-3 {
+        flex-wrap: nowrap;
+        @media screen and (min-width: 800px) {
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: center;
+        }
         div {
+          @media screen and (min-width: 800px) {
+            width: 30vw;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: auto;
+            margin-bottom: 50px;
+          }
           img {
             width: 290px;
             height: auto;
@@ -523,58 +452,13 @@ body {
         }
       }
       .flex {
-        .gauche {
+        div {
+          margin-bottom: 50px;
           img {
             width: 70vw;
             border: #284B63 thick double;
             @media screen and (min-width: 800px) {
               margin-top: 80px;
-              width: 20vw;
-            }
-          }
-          h3 {
-            font-family: Raleway, sans-serif;
-            font-weight: bold;
-            font-size: 1.875rem;
-            color: #534134;
-          }
-          p {
-            font-family: Raleway, sans-serif;
-            font-size: 1rem;
-            color: #534134;
-            line-height: 30px;
-            margin: 0 30px 40px;
-          }
-        }
-        .milieu {
-          img {
-            margin-top: 80px;
-            width: 70vw;
-            border: #284B63 thick double;
-            @media screen and (min-width: 800px) {
-              width: 20vw;
-            }
-          }
-          h3 {
-            font-family: Raleway, sans-serif;
-            font-weight: bold;
-            font-size: 1.875rem;
-            color: #534134;
-          }
-          p {
-            font-family: Raleway, sans-serif;
-            font-size: 1rem;
-            color: #534134;
-            line-height: 30px;
-            margin: 0 30px 40px;
-          }
-        }
-        .droite {
-          img {
-            margin-top: 80px;
-            width: 70vw;
-            border: #284B63 thick double;
-            @media screen and (min-width: 800px) {
               width: 20vw;
             }
           }
@@ -679,6 +563,52 @@ body {
             color: white;
             line-height: 30px;
             margin: 0 30px 40px;
+          }
+        }
+      }
+    }
+    .non-disponible {
+      text-align: center;
+      padding-bottom: 30px;
+      .flex {
+        .gauche {
+          @media screen and (min-width: 800px) {
+            margin-left: 13vw;
+          }
+          img {
+            width: 220px;
+            height: auto;
+            margin-top: 30px;
+            @media screen and (min-width: 800px) {
+              width: 16vw;
+            }
+          }
+        }
+        .droite {
+          @media screen and (min-width: 800px) {
+            margin-left: 16vw;
+          }
+          h2 {
+            font-family: Raleway, sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            color: #284B64;
+            margin-bottom: 0;
+            @media screen and (min-width: 800px) {
+              margin-top: 50px;
+              font-size: 2vw;
+            }
+          }
+          p {
+            font-family: Raleway, sans-serif;
+            font-size: 1.25rem;
+            text-align: center;
+            color: #284B64;
+            margin-bottom: 50px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.3vw;
+            }
           }
         }
       }

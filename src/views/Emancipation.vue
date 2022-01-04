@@ -1,5 +1,7 @@
 <template>
   <main>
+    <img src="@/assets/img/logo-ubfc2.png" alt="image_header" class="icones-header">
+    <h1 class="titre-header">Abécédaire</h1>
     <div id="emancipation-1">
       <div class="flex">
         <div class="gauche">
@@ -28,23 +30,11 @@
     <div id="emancipation-2">
       <h2>PRODUCTIONS</h2>
       <div class="flex">
-        <div class="gauche">
-          <img src="@/assets/img/exemple-emancipation.png" alt="Emancipation">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
-          <a class="voir-plus">Voir le projet</a>
-        </div>
-        <div class="milieu">
-          <img src="@/assets/img/exemple-emancipation.png" alt="Emancipation">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
-          <a class="voir-plus">Voir le projet</a>
-        </div>
-        <div class="droite">
-          <img src="@/assets/img/exemple-emancipation.png" alt="Emancipation">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
-          <a class="voir-plus">Voir le projet</a>
+        <div v-for="posts in liste" :key="posts.id">
+          <img :src="posts.better_featured_image.source_url" alt="Projet">
+          <h3>{{posts.title.rendered}}</h3>
+          <p>{{posts.content.rendered | liveSubstr(200)}}</p>
+          <a :href="posts.link" class="voir-plus">Voir le projet</a>
         </div>
       </div>
     </div>
@@ -74,8 +64,31 @@
   </main>
 </template>
 <script>
-export default {
+/* eslint-disable */
+import param from '@/param/param.js';
 
+export default {
+  name: 'Emancipation',
+  data() {
+    return {
+      liste: [],
+    };
+  },
+  filters: {
+    liveSubstr: function (string, nb) {
+      return string.substring(4,nb) + '...';
+    },
+    liveDate: function (string, nb) {
+      return string.substring(0,nb);
+    }
+  },
+  created() {
+    axios.get(param.host + 'posts').then((response) => {
+      console.log("Reponse", response);
+      this.liste = response.data;
+    })
+      .catch((error) => console.log(error));
+  },
 };
 </script>
 

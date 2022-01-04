@@ -5,7 +5,7 @@
     <div class="non-disponible">
       <div class="flex">
         <div class="gauche">
-          <img src="@/assets/icones/logo-emancipation.svg" alt="Émancipation">
+          <img src="@/assets/img/logo-ubfc2.png" alt="UBFC">
         </div>
         <div class="droite">
           <h2>Fonctionnalité non disponible</h2>
@@ -18,9 +18,11 @@
 </template>
 
 <script>
-/* eslint-disable */
-
 export default {
-  name: 'Conferences',
+  name: 'Profil',
 };
 </script>
+
+<style scoped>
+
+</style>

@@ -1,10 +1,7 @@
-<template>
-
-</template>
-
 <script>
+/* eslint-disable */
 export default {
-  name: 'Contact'
+  name: 'Contact',
 };
 </script>
 

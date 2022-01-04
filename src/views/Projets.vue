@@ -1,17 +1,18 @@
 <template>
   <main>
-    <heading></heading>
+    <img src="@/assets/icones/projets.svg" alt="image_header" class="icones-header">
+    <h1 class="titre-header">NOS PROJETS</h1>
     <div id="projets-1">
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-      <div class="flex">
-        <div v-for="article in liste" :key="article.id">
-          <img :src="article.featured_media" alt="Projet">
-          <h3>{{ article.title }}</h3>
-          <p>{{ article.excerpt }}</p>
-          <a class="voir-plus">Voir le projet</a>
+      <div class="flex-3">
+        <div v-for="posts in liste" :key="posts.id">
+          <img :src="posts.better_featured_image.source_url" alt="Projet">
+          <h3>{{posts.title.rendered}}</h3>
+          <p>{{posts.content.rendered | liveSubstr(200)}}</p>
+          <a :href="posts.link" class="voir-plus">Voir le projet</a>
         </div>
       </div>
-      <a class="savoir-plus">Voir tous les projets</a>
+      <router-link to="Projets" class="savoir-plus">Voir tous les projets</router-link>
     </div>
   </main>
 </template>
@@ -23,19 +24,21 @@ import heading from '@/components/heading.vue';
 
 export default {
   name: 'Projets',
-  components: { heading },
-  computed: {
-    getMetaData() {
-      return this.$route.meta.data;
-    }
-  },
   data() {
     return {
       liste: [],
     };
   },
+  filters: {
+    liveSubstr: function (string, nb) {
+      return string.substring(4,nb) + '...';
+    },
+    liveDate: function (string, nb) {
+      return string.substring(0,nb);
+    }
+  },
   created() {
-    axios.get(param.host + 'article').then((response) => {
+    axios.get(param.host + 'posts').then((response) => {
       console.log("Reponse", response);
       this.liste = response.data;
     })
