@@ -129,10 +129,10 @@
         </div>
         <div class="droite">
           <h2>POTHEM LLC - Bourgogne-Franche-Comté</h2>
-          <p>4, place Tharradin 25 200 Montbéliard<br>
-            <strong>Tél.</strong> +33 (0)3 81 99 47 34<br>
-            <strong>Mail DUT MMI :</strong> dut-mmi-montbeliard@univ-fcomte.fr<br>
-            <strong>Mail Licence pro Webdesign :</strong> lp-wd-montbeliard@univ-fcomte.fr</p>
+          <p>Lorem ipsum<br>
+            <strong>Tél.</strong>Lorem ipsum<br>
+            <strong>Mail :</strong>pothemllc@gmail.com<br>
+          </p>
           <router-link to="Contact" class="voir-plus">Nous écrire</router-link>
         </div>
       </div>

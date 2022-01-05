@@ -8,6 +8,8 @@ import Conferences from '@/views/Conferences.vue';
 import Emancipation from '@/views/Emancipation.vue';
 import Contact from '@/views/Contact.vue';
 import Profil from '@/views/Profil.vue';
+import MentionsLegales from '@/views/MentionsLegales.vue';
+import Emancite from '@/views/Emancite.vue';
 
 Vue.use(VueRouter);
 /* eslint-disable */
@@ -17,7 +19,7 @@ const routes = [
     name: 'Accueil',
     component: Accueil,
     meta: {
-      title: 'Bienvenue - POTHEM LLC',
+      title: 'Bienvenue - Projet Émancipation',
     }
   },
   {
@@ -25,7 +27,7 @@ const routes = [
     name: 'Information',
     component: Information,
     meta: {
-      title: 'Qui sommes-nous ? - POTHEM LLC',
+      title: 'Qui sommes-nous ? - Projet Émancipation',
     }
   },
   {
@@ -33,7 +35,7 @@ const routes = [
     name: 'Actualites',
     component: Actualites,
     meta: {
-      title: 'Actualités - POTHEM LLC',
+      title: 'Actualités - Projet Émancipation',
     }
   },
   {
@@ -41,7 +43,7 @@ const routes = [
     name: 'Projets',
     component: Projets,
     meta: {
-      title: 'Projets - POTHEM LLC',
+      title: 'Projets - Projet Émancipation',
     }
   },
   {
@@ -49,7 +51,7 @@ const routes = [
     name: 'Conferences',
     component: Conferences,
     meta: {
-      title: 'Conférences - POTHEM LLC',
+      title: 'Conférences - Projet Émancipation',
     }
   },
   {
@@ -57,7 +59,7 @@ const routes = [
     name: 'Emancipation',
     component: Emancipation,
     meta: {
-      title: 'Projet Émancipation - POTHEM LLC',
+      title: 'Abécédaire - Projet Émancipation',
     }
   },
   {
@@ -65,7 +67,7 @@ const routes = [
     name: 'Contact',
     component: Contact,
     meta: {
-      title: 'Contact - POTHEM LLC',
+      title: 'Contact - Projet Émancipation',
     }
   },
   {
@@ -73,7 +75,23 @@ const routes = [
     name: 'Profil',
     component: Profil,
     meta: {
-      title: 'Profil - POTHEM LLC',
+      title: 'Profil - Projet Émancipation',
+    }
+  },
+  {
+    path: '/mentionslegales',
+    name: 'MentionsLegales',
+    component: MentionsLegales,
+    meta: {
+      title: 'Mentions légales - Projet Émancipation',
+    }
+  },
+  {
+    path: '/emancite',
+    name: 'Emancite',
+    component: Emancite,
+    meta: {
+      title: 'Émancité - Projet Émancité',
     }
   },
 ];

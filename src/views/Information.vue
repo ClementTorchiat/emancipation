@@ -28,7 +28,7 @@
           </div>
         </div>
         <div>
-          <img src="@/assets/img/alain-lamboux-durand.jpg" alt="Alain Lamboux-Durand">
+          <img src="@/assets/img/sylvie-crinquand.jpg" alt="Alain Lamboux-Durand">
           <h3>Sylvie Crinquand</h3>
           <p>Professeure de littérature anglaise</p>
           <div class="flex-2">

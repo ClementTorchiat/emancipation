@@ -1,11 +1,11 @@
 <template>
   <main>
-    <img src="@/assets/icones/conferences.svg" alt="image_header" class="icones-header">
-    <h1 class="titre-header">NOS CONFÉRENCES</h1>
+    <img src="@/assets/icones/logo-emancipation-2.svg" alt="image_header" class="icones-header">
+    <h1 class="titre-header">PROFIL</h1>
     <div class="non-disponible">
       <div class="flex">
         <div class="gauche">
-          <img src="@/assets/img/logo-ubfc2.png" alt="UBFC">
+          <img src="@/assets/icones/logo-emancipation.svg" alt="UBFC">
         </div>
         <div class="droite">
           <h2>Fonctionnalité non disponible</h2>

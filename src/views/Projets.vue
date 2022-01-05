@@ -3,7 +3,7 @@
     <img src="@/assets/icones/projets.svg" alt="image_header" class="icones-header">
     <h1 class="titre-header">NOS PROJETS</h1>
     <div id="projets-1">
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      <p>Voici les différents projets réalisés dans le cadre du proje émancipation.</p>
       <div class="flex-3">
         <div v-for="posts in liste" :key="posts.id">
           <img :src="posts.better_featured_image.source_url" alt="Projet">

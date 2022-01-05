@@ -13,7 +13,7 @@
           <li><router-link to="Projets" tag="a">Projets</router-link></li>
           <li><router-link to="Conferences" tag="a">Conférences</router-link></li>
           <li><router-link to="Emancipation" tag="a">Abécédaire</router-link></li>
-          <li><router-link to="Information" tag="a">Émancité</router-link></li>
+          <li><router-link to="Emancite" tag="a">Émancité</router-link></li>
         </ul>
         <router-link to="Profil"><img class="icones-menu" src="@/assets/icones/user.svg" alt="profil"></router-link>
       </nav>
@@ -34,7 +34,7 @@
       <div class="boite">
         <ul>
           <li><a><h2>AUTRES PAGES</h2></a></li>
-          <li><router-link to="/" tag="a">Mentions légales</router-link></li>
+          <li><router-link to="MentionsLegales" tag="a">Mentions légales</router-link></li>
           <li><router-link to="Contact" tag="a">Contact</router-link></li>
           <li><router-link to="Profil" tag="a">Mon espace</router-link></li>
         </ul>

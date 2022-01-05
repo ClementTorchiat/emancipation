@@ -1,7 +1,7 @@
 <template>
   <main>
     <img src="@/assets/icones/logo-emancipation-2.svg" alt="image_header" class="icones-header">
-    <h1 class="titre-header">ABÉCÉDAIRE</h1>
+    <h1 class="titre-header">ÉMANCITÉ</h1>
     <div class="non-disponible">
       <div class="flex">
         <div class="gauche">
@@ -16,15 +16,13 @@
     </div>
   </main>
 </template>
+
 <script>
-/* eslint-disable */
-
 export default {
-  name: 'Emancipation',
-
+  name: 'Emancite',
 };
 </script>
 
-<style scoped lang="less">
-@import "/src/assets/less/pages.less";
+<style scoped>
+
 </style>

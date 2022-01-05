@@ -189,8 +189,9 @@ body {
       }
       img {
         padding: 20px 0;
+        width: 230px;
         @media screen and (min-width: 800px) {
-          width: 120vw;
+          width: 30vw;
           margin: 0 8vw 0 6vw;
           transform: translateY(-3.3vw);
         }
@@ -318,13 +319,11 @@ body {
         @media screen and (min-width: 800px) {
           display: flex;
           flex-wrap: wrap;
-          margin-left: auto;
-          margin-right: auto;
           justify-content: center;
         }
         div {
           @media screen and (min-width: 800px) {
-            width: 30vw;
+            width: 20vw;
             margin-left: 5%;
             margin-right: 5%;
             height: auto;
@@ -356,7 +355,7 @@ body {
             margin: 30px 30px 40px;
             @media screen and (min-width: 800px) {
               font-size: 1.3vw;
-              margin: 2vw 4vw 3vw;
+              margin: 2vw 0;
             }
           }
           &:last-child {
@@ -610,6 +609,39 @@ body {
               font-size: 1.3vw;
             }
           }
+        }
+      }
+    }
+    #mentions_legales {
+      text-align: center;
+      h2 {
+        font-family: Raleway, sans-serif;
+        font-weight: bold;
+        color: #284B63;
+        font-size: 1.875rem;
+        @media screen and (min-width: 800px) {
+          font-size: 1.95vw;
+        }
+      }
+      h3 {
+        font-family: Raleway, sans-serif;
+        color: #284B63;
+        font-size: 1.3rem;
+        @media screen and (min-width: 800px) {
+          font-size: 1.6vw;
+        }
+      }
+      p {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 35px;
+        margin: 20px 40px;
+        @media screen and (min-width: 800px) {
+          font-size: 1.2vw;
+          line-height: 2.2vw;
+          margin-bottom: 6vw;
+          padding: 0 6.5vw 0;
         }
       }
     }
