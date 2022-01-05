@@ -42,10 +42,10 @@
       <div class="boite">
         <ul>
           <li><a><h2>UNIVERSITÉ</h2></a></li>
-          <li><a href="https://www.ubfc.fr/"><img src="@/assets/img/logo-ubfc2.png" alt="UBFC"></a></li>
-          <li><a href="https://www.ubfc.fr/">UBFC</a></li>
-          <li><a href="https://www.u-bourgogne.fr/">Université de Bourgogne</a></li>
-          <li><a href="https://www.univ-fcomte.fr/">Université de Franche-Comté</a></li>
+          <li><a onclick="window.open(this.href); return false;" href="https://www.ubfc.fr/"><img src="@/assets/img/logo-ubfc2.png" alt="UBFC"></a></li>
+          <li><a onclick="window.open(this.href); return false;" href="https://www.ubfc.fr/">UBFC</a></li>
+          <li><a onclick="window.open(this.href); return false;" href="https://www.u-bourgogne.fr/">Université de Bourgogne</a></li>
+          <li><a onclick="window.open(this.href); return false;" href="https://www.univ-fcomte.fr/">Université de Franche-Comté</a></li>
         </ul>
       </div>
     </footer>
