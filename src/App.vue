@@ -25,10 +25,10 @@
         <ul>
           <li><a><h2>NAVIGATION</h2></a></li>
           <li><router-link to="Actualites" tag="a">Actualités</router-link></li>
-          <li><router-link to="Information" tag="a">Qui sommes-nous ?</router-link></li>
           <li><router-link to="Projets" tag="a">Projets</router-link></li>
           <li><router-link to="Conferences" tag="a">Conférences</router-link></li>
-          <li><router-link to="Emancipation" tag="a">Émancipation</router-link></li>
+          <li><router-link to="Emancipation" tag="a">Abécédaire</router-link></li>
+          <li><router-link to="Emancite" tag="a">Émancité</router-link></li>
         </ul>
       </div>
       <div class="boite">
@@ -37,6 +37,7 @@
           <li><router-link to="MentionsLegales" tag="a">Mentions légales</router-link></li>
           <li><router-link to="Contact" tag="a">Contact</router-link></li>
           <li><router-link to="Profil" tag="a">Mon espace</router-link></li>
+          <li><router-link to="Information" tag="a">Qui sommes-nous ?</router-link></li>
         </ul>
       </div>
       <div class="boite">

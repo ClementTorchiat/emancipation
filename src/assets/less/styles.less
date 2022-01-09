@@ -595,6 +595,7 @@ body {
             width: 20vw;
             @media screen and (min-width: 800px) {
               width: 10vw;
+              margin-top: 3.125vw;
             }
           }
         }
@@ -728,7 +729,6 @@ body {
     div#accueil-2 {
       background-color: white;
       text-align: center;
-      padding-bottom: 30px;
       h2 {
         font-family: Oxygen, sans-serif;
         font-weight: bold;
@@ -801,7 +801,7 @@ body {
     div#accueil-3 {
       background-color: #284B63;
       text-align: center;
-      padding-bottom: 30px;
+      padding-bottom: 80px;
       h2 {
         font-family: Oxygen, sans-serif;
         font-weight: bold;
@@ -848,88 +848,77 @@ body {
     div#accueil-4 {
       background-color: #27272A;
       text-align: center;
-      padding-bottom: 30px;
-      padding-top: 20px;
-      @media screen and (min-width: 800px) {
-        padding-bottom: 50px;
-      }
+      padding-bottom: 50px;
       h2 {
         font-family: Oxygen, sans-serif;
         font-weight: bold;
         font-size: 2rem;
         color: white;
+        margin-top: 0;
+        padding-top: 50px;
         @media screen and (min-width: 800px) {
           font-size: 2.2rem;
         }
       }
-      .flex {
-        .gauche {
-          img {
-            width: 70vw;
-            border: #284B63 thick double;
-            @media screen and (min-width: 800px) {
-              margin-top: 80px;
-              width: 20vw;
-            }
-          }
-          h3 {
-            font-family: Raleway, sans-serif;
-            font-weight: bold;
-            font-size: 1.875rem;
-            color: white;
-          }
-          p {
-            font-family: Raleway, sans-serif;
-            font-size: 1rem;
-            color: white;
-            line-height: 30px;
-            margin: 0 30px 40px;
-          }
+      p {
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        color: #465158;
+        text-align: left;
+        line-height: 30px;
+        margin: 30px 30px 0;
+        @media screen and (min-width: 800px) {
+          font-size: 1.3vw;
+          line-height: 2vw;
+          margin: 2vw 8vw 0;
         }
-        .milieu {
-          img {
-            margin-top: 80px;
-            width: 70vw;
-            border: #284B63 thick double;
-            @media screen and (min-width: 800px) {
-              width: 20vw;
-            }
-          }
-          h3 {
-            font-family: Raleway, sans-serif;
-            font-weight: bold;
-            font-size: 1.875rem;
-            color: white;
-          }
-          p {
-            font-family: Raleway, sans-serif;
-            font-size: 1rem;
-            color: white;
-            line-height: 30px;
-            margin: 0 30px 40px;
-          }
+      }
+      .flex-3 {
+        flex-wrap: nowrap;
+        @media screen and (min-width: 800px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
         }
-        .droite {
+        div {
+          @media screen and (min-width: 800px) {
+            width: 22vw;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: auto;
+            margin-bottom: 50px;
+          }
           img {
+            width: 290px;
+            height: auto;
             margin-top: 80px;
-            width: 70vw;
             border: #284B63 thick double;
             @media screen and (min-width: 800px) {
-              width: 20vw;
+              width: 24vw;
+              margin-top: 5vw;
             }
           }
           h3 {
             font-family: Raleway, sans-serif;
             font-weight: bold;
-            font-size: 1.875rem;
             color: white;
+            font-size: 25px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.6vw;
+            }
           }
           p {
             font-family: Raleway, sans-serif;
-            font-size: 1rem;
             color: white;
-            line-height: 30px;
-            margin: 0 30px 40px;
+            font-size: 20px;
+            margin: 30px 30px 40px;
+            @media screen and (min-width: 800px) {
+              font-size: 1.3vw;
+              margin: 2vw 0;
+            }
+          }
+          &:last-child {
+            margin-bottom: 80px;
           }
         }
       }
@@ -937,7 +926,7 @@ body {
     div#accueil-5 {
       background-color: #F5EDE7;
       text-align: center;
-      padding-bottom: 30px;
+      padding-bottom: 80px;
       h2 {
         font-family: Oxygen, sans-serif;
         font-weight: bold;
@@ -1015,7 +1004,7 @@ body {
     div#accueil-6 {
       background-color: #DAE3E8;
       text-align: center;
-      padding-bottom: 30px;
+      padding-bottom: 80px;
       h2 {
         font-family: Oxygen, sans-serif;
         font-weight: bold;

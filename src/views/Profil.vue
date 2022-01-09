@@ -10,7 +10,7 @@
         <div class="droite">
           <h2>Fonctionnalité non disponible</h2>
           <p>Revenez plus tard !</p>
-          <router-link to="Accueil" class="voir-plus">Retourner à l'accueil</router-link>
+          <router-link to="/" class="voir-plus">Retourner à l'accueil</router-link>
         </div>
       </div>
     </div>

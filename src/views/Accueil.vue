@@ -11,7 +11,7 @@
         <div class="droite">
           <h2>POTHEM LLC</h2>
           <p>Emancipation, Transmissions, Héritages</p>
-          <a class="savoir-plus">Voir l'abécédaire</a>
+          <router-link to="Emancipation" class="savoir-plus">Voir l'abécédaire</router-link>
         </div>
       </div>
       <h2>PROJET ÉMANCIPATION</h2>
@@ -84,24 +84,12 @@
     </div>
     <div id="accueil-4">
       <h2>ÉVÈNEMENTS</h2>
-      <div class="flex">
-        <div class="gauche">
-          <img src="@/assets/img/exemple-emancipation.png" alt="Emancipation">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
-          <a class="savoir-plus">Découvrir</a>
-        </div>
-        <div class="milieu">
-          <img src="@/assets/img/exemple-emancipation.png" alt="Emancipation">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
-          <a class="savoir-plus">Découvrir</a>
-        </div>
-        <div class="droite">
-          <img src="@/assets/img/exemple-emancipation.png" alt="Emancipation">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
-          <a class="savoir-plus">Découvrir</a>
+      <div class="flex-3">
+        <div v-for="evenement in liste_evenements" :key="evenement.id">
+          <img :src="evenement.better_featured_image.source_url" alt="Évènement">
+          <h3>{{evenement.title.rendered}}</h3>
+          <p>{{evenement.content.rendered | liveSubstr(200)}}</p>
+          <a onclick="window.open(this.href); return false;" :href="evenement.link" class="savoir-plus">Voir l'évènement</a>
         </div>
       </div>
     </div>
@@ -112,11 +100,11 @@
         </div>
         <div class="droite">
           <h2>Dernier Projet</h2>
-          <div v-for="posts in liste.slice(0,1)" :key="posts.id">
+          <div v-for="posts in liste_projets.slice(0,1)" :key="posts.id">
             <img :src="posts.better_featured_image.source_url" alt="Projet">
             <h3>{{posts.title.rendered}}</h3>
             <p>{{posts.content.rendered | liveSubstr(200)}}</p>
-            <a :href="posts.link" class="voir-plus">Voir le projet</a>
+            <a onclick="window.open(this.href); return false;" :href="posts.link" class="voir-plus">Voir le projet</a>
           </div>
           <router-link to="Projets" class="savoir-plus">Voir tous les projets</router-link>
         </div>
@@ -148,7 +136,8 @@ export default {
   name: 'Accueil',
   data() {
     return {
-      liste: [],
+      liste_projets: [],
+      liste_evenements: [],
     };
   },
   filters: {
@@ -162,9 +151,13 @@ export default {
   created() {
     axios.get(param.host + 'posts').then((response) => {
       console.log("Reponse", response);
-      this.liste = response.data;
+      this.liste_projets = response.data;
     })
       .catch((error) => console.log(error));
+    axios.get(param.host + 'evenement').then((response) => {
+      console.log("Reponse", response);
+      this.liste_evenements = response.data;
+    })
   },
 }
 </script>

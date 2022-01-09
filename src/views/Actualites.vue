@@ -15,12 +15,12 @@
       </div>
     </div>
     <div id="actualités-2">
-      <div class="flex">
+      <div class="flex-3">
         <div v-for="actualites in liste" :key="actualites.id">
           <img :src="actualites.better_featured_image.source_url" alt="Projet">
           <h3>{{actualites.title.rendered}}</h3>
           <p>{{actualites.content.rendered | liveSubstr(200)}}</p>
-          <a :href="actualites.link" class="voir-plus">Voir le projet</a>
+          <a onclick="window.open(this.href); return false;" :href="actualites.link" class="voir-plus">Voir le projet</a>
         </div>
       </div>
     </div>
